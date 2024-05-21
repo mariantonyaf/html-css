@@ -19,17 +19,23 @@
         }
 
         thead, tfoot{
-            background-color: rgb(148, 81, 215);
+            background-color: rgb(139, 61, 217);
             color: white;
         }
         td.num{
             text-align: right;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(215, 186, 245);
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <h2>Lista de unidades federativas do Brasil por população</h2>
     <!--
         ANATOMINA PARA TABELAS GRANDES
         TABLE
@@ -42,6 +48,7 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
