@@ -11,7 +11,7 @@
 
         table{
             border-collapse: collapse;
-            width: 200px;
+            width: 500px;
         }
 
         td, th{
@@ -19,6 +19,33 @@
             padding: 10px;
             text-align: center;
         }
+
+        th.cor{
+            background-color: gray;
+            color: white;
+        }
+
+        td.cor1{
+            background-color: gray;
+            color:white;
+        }
+
+        th#mod1{
+            text-align: left;
+        }
+
+        th#mod2{
+            text-align: left;
+        }
+
+        th#mod3{
+            text-align: left;
+        }
+
+        th#mod4{
+            text-align: left;
+        }
+        
     </style>
 </head>
 <body>
@@ -26,16 +53,16 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="3" scope="col">Área</th>
-                <th rowspan="3" scope="col">Disciplinas</th>
+                <th rowspan="3" scope="col" class="cor">Área</th>
+                <th rowspan="3" scope="col" class="cor">Disciplinas</th>
             </tr>
             <tr>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="3" scope="col">Média</th>
+                <th colspan="2" scope="colgroup" class="cor">Notas</th>
+                <th rowspan="3" scope="col" class="cor">Média</th>
             </tr>
             <tr>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
+                <th scope="col" class="cor" id="mod3">Nota 1</th>
+                <th scope="col" class="cor" id="mod4">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -67,8 +94,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Média de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="cor" id="mod1">Média de Exatas</th>
+                <td class="cor1">0.0</td>
             </tr>
             <tr>
                 <th rowspan="3" scope="rowgroup">Humanas</th>
@@ -86,8 +113,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Média de Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="cor" id="mod2">Média de Humanas</th>
+                <td class="cor1">0.0</td>
             </tr>
         </tbody>
     </table>
