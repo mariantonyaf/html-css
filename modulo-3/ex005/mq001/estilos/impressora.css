@@ -11,3 +11,15 @@ html{
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso atráves do site www.cursoemvideo.com';
+}
